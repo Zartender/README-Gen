@@ -1,14 +1,19 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-// function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-// function renderLicenseLink(license) {}
+function renderLicenseLink(license) {}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-// function renderLicenseSection(license) {}
+function renderLicenseSection(license) {}
+  if (choices = " "){
+    return " ";
+  }
 
 function renderTable(contents){
   if (contents === true){
@@ -22,8 +27,9 @@ function renderTable(contents){
 }
   
 
+
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
+function generateMarkdown(data){
   console.log(data)
   return `# ${data.title}
   ## Description: ${data.description}
@@ -48,7 +54,7 @@ function generateMarkdown(data) {
   ${data.contribution}
   If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
   If you followed tutorials, include links to those here as well.
-  ## License: ${data.license}
+  ## License:🏆  ${renderLicenseSection(data.license)}
   The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
   ---
   🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
@@ -64,4 +70,4 @@ function generateMarkdown(data) {
 `;
 }
 
-export default generateMarkdown;
+module.exports = generateMarkdown;

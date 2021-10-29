@@ -1,46 +1,53 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./utils/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown').default;
 
 // TODO: Create an array of questions for user input
 const questions = [
     // THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, 
     //  Usage, License, Contributing, Tests, and Questions
     {
+        // Added
         type: 'input',
         name: 'title',
         message: 'What is your project title?',
     },
     {
+        // Added
         type: 'input',
         name: 'description',
-        message: 'Please enter your project description.',
+        message: 'Provide a short description explaining the what, why, and how of your project.',
     },
     {
+        // Added
         type: 'confirm',
         name: 'contents',
         message: 'Create a table of contents?',
     },
     {
+        // Added
         type: 'input',
         name: 'install',
-        message: 'What installation is necessary for your program?',
+        message: 'What are the steps required to install your project?',
         default: "npm install"
     },
     {
+        // Added
         type: 'input',
         name: 'usage',
         message: 'What installation is necessary for your program?',
         default: "git clone repo"
     },
     {
+        // Added
         type: 'list',
         name: 'license',
         message: 'Does your project require a license?',
-        choices: ["MIT", "None"]
+        choices: ["APM", "Bower", "Conda", "Dub", "Github", "MIT", "NPM"]
     },
     {
+        // Added
         type: 'input',
         name: 'contribution',
         message: 'Please list the contributors (collaborators) to your project.',
