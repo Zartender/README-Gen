@@ -1,14 +1,14 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+// function renderLicenseBadge(license) {}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+// function renderLicenseLink(license) {}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+// function renderLicenseSection(license) {}
 
 function renderTable(contents){
   if (contents === true){
@@ -20,6 +20,8 @@ function renderTable(contents){
     - [License](#license)` 
   } else { return ""}
 }
+  
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   console.log(data)
@@ -33,7 +35,7 @@ function generateMarkdown(data) {
  
   ${renderTable(data.contents)} 
 
-  ## Installation
+  ## Installation: ${data.install}
   What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
   ## Usage
   Provide instructions and examples for use. Include screenshots as needed.
@@ -41,11 +43,12 @@ function generateMarkdown(data) {
       \`\`\`md
       ![alt text](assets/images/screenshot.png)
       \`\`\`
-  ## Credits
+  ## Credits: 
   List your collaborators, if any, with links to their GitHub profiles.
+  ${data.contribution}
   If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
   If you followed tutorials, include links to those here as well.
-  ## License
+  ## License: ${data.license}
   The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
   ---
   🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
@@ -61,4 +64,4 @@ function generateMarkdown(data) {
 `;
 }
 
-module.exports = generateMarkdown;
+export default generateMarkdown;
