@@ -1,12 +1,12 @@
-// TODO: Include packages needed for this application
+// TODO: Include packages needed for this application - check
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require("./utils/generateMarkdown.js");
 
-// TODO: Create an array of questions for user input
+// TODO: Create an array of questions for user input - check
 const questions = [
     // THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, 
-    //  Usage, License, Contributing, Tests, and Questions
+    //  Usage, License, Contributing, Tests, and Questions - check
     {
         // Added
         type: 'input',
@@ -53,23 +53,26 @@ const questions = [
         message: 'Please list the contributors (collaborators) to your project.',
     },
     {
+        // Added
         type: 'confirm',
         name: 'tests',
         message: 'Does your program require any testing?',
     },
     {
+        // Added
         type: 'input',
         name: 'githubId',
         message: 'What is your Github username?',
     },
     {
+        // Added
         type: 'input',
         name: 'email',
         message: 'What is your email address?',
     },
 ];
 
-// TODO: Create a function to write README file
+// TODO: Create a function to write README file - check
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, generateMarkdown(data), 'utf8', (error) => {
         if (error) {
@@ -79,7 +82,7 @@ function writeToFile(fileName, data) {
     });
 }
 
-// TODO: Create a function to initialize app
+// TODO: Create a function to initialize app - check
 function init() {
     inquirer.prompt(questions)
     .then((answers) => {
@@ -92,5 +95,5 @@ function init() {
     })
 }
 
-// Function call to initialize app
+// Function call to initialize app - check
 init();
