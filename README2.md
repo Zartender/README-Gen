@@ -1,19 +1,16 @@
 # 09 Node.js Homework: Professional README Generator
 
 ## Your Task
-<!-- check -->
 When creating an open source project on GitHub, it’s important to have a high-quality README for the app. This should include what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions&mdash;this last part increases the likelihood that other developers will contribute to the success of the project. 
-<!-- check -->
 You can quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time to working on the project.
-<!-- check -->
 Your task is to create a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer). Review the [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) as a reminder of everything that a high-quality, professional README should contain. 
 
 The application will be invoked by using the following command:
-<!-- okay -->
+
 ```bash
 node index.js
 ```
-<!-- still need to make screencastify -->
+
 Because this application won’t be deployed, you’ll also need to provide a link to a walkthrough video that demonstrates its functionality. Revisit the Screencastify Tutorial in the prework as a refresher on how to record video from your computer. You’ll need to submit a link to the video _and_ add it to the README of your project.
 
 
@@ -24,35 +21,42 @@ AS A developer
 I WANT a README generator
 SO THAT I can quickly create a professional README for a new project
 ```
-<!-- check -->
+
+## ScreenCastify Video
+
+[VideoLink](https://youtu.be/UcNMylPvOWI)
+
+## Screenshots
+
+![Screenshot](assets/images/readme1.png)
+
+![Screenshot](assets/images/readme2.png)
+
+![Screenshot](assets/images/readme3.png)
+
+![Screenshot](assets/images/readme4.png)
+
+![Screenshot](assets/images/readme5.png)
+
+![Screenshot](assets/images/readme6.png)
+
+
 ## Acceptance Criteria
-<!-- check -->
 ```md
 GIVEN a command-line application that accepts user input
 WHEN I am prompted for information about my application repository
 THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-<!-- check -->
 WHEN I enter my project title
-<!-- check -->
 THEN this is displayed as the title of the README
-<!-- check -->
 WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-<!-- check -->
 THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
-<!-- check -->
 WHEN I choose a license for my application from a list of options
-<!-- check -->
 THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-<!-- check -->
 WHEN I enter my GitHub username
 THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-<!-- check -->
 WHEN I enter my email address
-<!-- check -->
-<!-- check -->
 
 THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-<!-- check -->
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
@@ -60,9 +64,9 @@ THEN I am taken to the corresponding section of the README
 ## Getting Started
 
 Here are some guidelines to help you get started:
-<!-- check -->
+
 * Create a `.gitignore` file and include `node_modules/` and `.DS_Store/` so that your `node_modules` directory isn't tracked or uploaded to GitHub. Be sure to create your `.gitignore` file before installing any npm dependencies.
-<!-- check -->
+
 * Make sure that your repo includes a `package.json` with the required dependencies. You can create one by running `npm init` when you first set up the project, before installing any dependencies.
 
 * Include a video of the typical user flow through your application. This includes views of the prompts and the responses after their selection.
@@ -71,31 +75,23 @@ Here are some guidelines to help you get started:
 
 ## Grading Requirements
 
-This homework is graded based on the following criteria: 
 
-### Deliverables: 20%
 
-* A sample README generated using the application must be submitted.
+### Deliverables: 
 
-* Your GitHub repository containing your application code.
+[](https://github.com/Zartender/README-Gen)
 
-### Walkthrough Video: 27%
 
-* A walkthrough video that demonstrates the functionality of the README generator must be submitted, and a link to the video should be included in your README file.
 
-* The walkthrough video must demonstrate how a user would invoke the application from the command line.
+### Walkthrough Video: 
 
-* The walkthrough video must demonstrate how a user would enter responses to all of the prompts in the application.
-
-* The walkthrough video must demonstrate a generated README that matches the user input and has a functioning table of contents.
-
-### Technical Acceptance Criteria: 40%
+### Technical Acceptance
 
 * Satisfies all of the above acceptance criteria plus the following:
 
 	* Uses the [Inquirer package](https://www.npmjs.com/package/inquirer).
 
-### Repository Quality: 13%
+### Repository Quality
 
 * Repository has a unique name.
 
